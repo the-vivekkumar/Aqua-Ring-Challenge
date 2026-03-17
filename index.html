@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Water Ring Toss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- START -->
+<div id="startScreen" class="screen ocean">
+  <div class="card">
+    <h1>💧 Water Ring Toss</h1>
+    <p>Press ← → to move | SPACE to pump</p>
+    <button id="startBtn">Start Game</button>
+  </div>
+</div>
+
+<!-- LOADING -->
+<div id="loadingScreen" class="screen ocean hidden">
+  <div class="card">
+    <h2>Loading Ocean...</h2>
+  </div>
+</div>
+
+<!-- GAME -->
+<div id="gameUI" class="hidden">
+  <div class="topBar">
+    <span id="levelText">Level: 1</span>
+    <span id="scoreText">Placed: 0</span>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div class="bottomBar">
+    <button id="restartBtn">Restart</button>
+    <button id="exitBtn">Exit</button>
+  </div>
+</div>
+
+<!-- COMPLETE -->
+<div id="completeScreen" class="screen hidden">
+  <div class="card">
+    <h2>Level Complete 🎉</h2>
+    <button id="nextLevelBtn">Next Level</button>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div id="exitPopup" class="popup hidden">
+  <div class="popupBox">
+    <p>Come back soon 👋</p>
+    <button id="closePopup">OK</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
